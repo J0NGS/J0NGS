@@ -10,7 +10,7 @@ Olá! Meu nome é João Gonçalo, sou estudante de Ciência da Computação na U
 <!-- Stats -->
 ## Meus stats
 
-![Github stats](https://github-readme-stats.vercel.app/api?username=seuusuario&show_icons=true&hide_border=true&count_private=true)
+![Github stats](https://github-readme-stats.vercel.app/api?username=J0NGS&show_icons=true&hide_border=true&count_private=true)
 
 <!-- Linguagens utilizadas -->
 ## Principais Linguagens Utilizadas
@@ -26,4 +26,4 @@ Olá! Meu nome é João Gonçalo, sou estudante de Ciência da Computação na U
 <!-- Cobrinha -->
 ## Minha cobrinha 🐍
 
-![Snake animation](https://github.com/seuusuario/seuusuario/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/J0NGS/seuusuario/blob/output/github-contribution-grid-snake.svg)
