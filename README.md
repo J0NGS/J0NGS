@@ -26,4 +26,4 @@ Olá! Meu nome é João Gonçalo, sou estudante de Ciência da Computação na U
 <!-- Cobrinha -->
 ## Minha cobrinha 🐍
 
-![Snake animation](https://github.com/J0NGS/J0NGS/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/jgoulartf/J0NS/blob/output/github-contribution-grid-snake.svg)
