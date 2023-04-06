@@ -1,29 +1,57 @@
-<!-- Pins de Projetos -->
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=J0NGS&repo=SistemaAbstrato_BackEnd)](https://github.com/J0NGS/SistemaAbstrato_BackEnd)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=J0NGS&repo=MinhaLeitura)](https://github.com/J0NGS/MinhaLeitura)
 
-<!-- Sobre mim -->
-## Sobre mim
-
+## Heey 👋, I'm João Gonçalo!
+#Description
 Olá! Meu nome é João Gonçalo, sou estudante de Ciência da Computação na UFERSA Mossoró. Meu foco de estudo é em Java, principalmente para desenvolvimento de aplicações back-end utilizando o framework Spring Boot. Além disso, também tenho conhecimentos em C++ com foco em programação para jogos 2D, onde se utiliza muito POO. Atualmente estou aprendendo melhorando meus conhecimentos em Spring Boot.
 
-<!-- Stats -->
-## Meus stats
+<!-- 
+<img style="margin-left=50px;" class="margin-l" height=150px width=200px src="https://cdn.dribbble.com/users/330915/screenshots/3587000/10_coding_dribbble.gif">
+-->
 
-![Github stats](https://github-readme-stats.vercel.app/api?username=seuusuario&show_icons=true&hide_border=true&count_private=true&bg_color=000000)
 
-<!-- Linguagens utilizadas -->
-## Principais Linguagens Utilizadas
+<br/>
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](www.linkedin.com/in/
+jngoncalo)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:joao123goulart@gmail.com)](mailto:jnetogoncalo@gmail.com)
+[![Discord Badge](https://img.shields.io/badge/Discord-7289DA?style=flat-square&logo=discord&logoColor=white)](jngoncalo#0748)
+[![Instagram Badge](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=discord&logoColor=white&link=https://www.instagram.com/jgoulart.dev)](https://www.instagram.com/jngoncalo)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=J0NGS&hide=html)](https://github.com/seuusuario)
+<table>
+  <th>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=J0NGS&layout=compact&langs_count=7&theme=dracula"/>
+  </th>
+  <th>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=J-NGS&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+  </th> 
+</table>
 
-<!-- Ícones -->
+- ### 📚 Graduating in Computer Science at UFERSA.
 
-![Java](https://img.shields.io/badge/-Java-orange?style=flat-square&logo=java)
-![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-brightgreen?style=flat-square&logo=spring)
-![C++](https://img.shields.io/badge/-C++-blue?style=flat-square&logo=cplusplus)
+### Skills
+<!-- ## Languages -->
+<div>
+  <table>
+    <th>
+      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />    
+    </th>
+    <th>
+      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+    </th>
+  </table>
 
-<!-- Cobrinha -->
-## Minha cobrinha 🐍
+</div>
 
-![Snake animation](https://github.com/jgoulartf/J0NS/blob/output/github-contribution-grid-snake.svg)
+<!-- ## Tools -->
+<div> 
+<table>
+	<th>	  <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+	</th>
+	<th>  <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+	</th>
+	<th>  <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+	</th>
+</table>
+</div>
+
+
+![Snake animation](https://github.com/J0NGS/jgoulartf/blob/output/github-contribution-grid-snake.svg)
+
