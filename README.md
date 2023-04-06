@@ -9,6 +9,7 @@ Olá! Meu nome é João Gonçalo, sou estudante de Ciência da Computação na U
 
 
 <br/>
+
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](www.linkedin.com/in/jngoncalo)
 
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jnetogoncalo@gmail.com)](mailto:jnetogoncalo@gmail.com)
