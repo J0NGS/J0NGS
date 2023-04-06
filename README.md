@@ -11,16 +11,16 @@ Olá! Meu nome é João Gonçalo, sou estudante de Ciência da Computação na U
 <br/>
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](www.linkedin.com/in/
 jngoncalo)
-[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:joao123goulart@gmail.com)](mailto:jnetogoncalo@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jnetogoncalo@gmail.com)](mailto:jnetogoncalo@gmail.com)
 [![Discord Badge](https://img.shields.io/badge/Discord-7289DA?style=flat-square&logo=discord&logoColor=white)](jngoncalo#0748)
-[![Instagram Badge](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=discord&logoColor=white&link=https://www.instagram.com/jgoulart.dev)](https://www.instagram.com/jngoncalo)
+[![Instagram Badge](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=discord&logoColor=white&link=https://www.instagram.com/jngoncalo)](https://www.instagram.com/jngoncalo)
 
 <table>
   <th>
     <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=J0NGS&layout=compact&langs_count=7&theme=dracula"/>
   </th>
   <th>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=J-NGS&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=J0NGS&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
   </th> 
 </table>
 
