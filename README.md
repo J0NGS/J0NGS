@@ -1,6 +1,7 @@
 
 ## Heey 👋, I'm João Gonçalo!
-#Description
+
+##Description
 Olá! Meu nome é João Gonçalo, sou estudante de Ciência da Computação na UFERSA Mossoró. Meu foco de estudo é em Java, principalmente para desenvolvimento de aplicações back-end utilizando o framework Spring Boot. Além disso, também tenho conhecimentos em C++ com foco em programação para jogos 2D, onde se utiliza muito POO. Atualmente estou aprendendo melhorando meus conhecimentos em Spring Boot.
 
 <!-- 
