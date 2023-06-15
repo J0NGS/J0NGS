@@ -52,7 +52,3 @@ Olá! Meu nome é João Gonçalo, sou estudante de Ciência da Computação na U
 	</th>
 </table>
 </div>
-
-
-![Snake animation](https://github.com/J0NGS/jgoulartf/blob/output/github-contribution-grid-snake.svg)
-
