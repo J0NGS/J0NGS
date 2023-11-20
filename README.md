@@ -15,16 +15,6 @@ Olá! Meu nome é João Gonçalo, sou estudante de Ciência da Computação na U
 
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jnetogoncalo@gmail.com)](mailto:jnetogoncalo@gmail.com)
 
-
-<table>
-  <th>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=J0NGS&layout=compact&langs_count=7&theme=dracula"/>
-  </th>
-  <th>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=J0NGS&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-  </th> 
-</table>
-
 - ### 📚 Graduating in Computer Science at UFERSA.
 
 ### Skills
@@ -37,18 +27,48 @@ Olá! Meu nome é João Gonçalo, sou estudante de Ciência da Computação na U
     <th>
       <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
     </th>
+    <th>
+      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original-wordmark.svg" />
+    </th>
+    <th>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+    </th>
+    <th>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+    </th>
+    <th>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+    </th>
+    <th>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+    </th>
   </table>
 
 </div>
 
 <!-- ## Tools -->
 <div> 
-<table>
-	<th>	  <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-	</th>
-	<th>  <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
-	</th>
-	<th>  <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-	</th>
+  <table>
+    <th>	  
+      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+    </th>
+    <th>	  
+      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original-wordmark.svg" />
+    </th>
+    <th>	  
+      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
+    </th>
+    <th>	  
+      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+    </th>
+    <th>	  
+      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+    </th>
+    <th>	  
+      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
+    </th>
+    <th>	  
+      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+    </th>
 </table>
 </div>
