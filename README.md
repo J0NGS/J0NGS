@@ -1,75 +1,74 @@
+# 👋 Olá, eu sou o João Gonçalo!
 
-## Heey 👋, I'm João Gonçalo!
+### Mestrando em Ciência da Computação | Desenvolvedor Back-End Java | Pesquisador em Pesquisa Operacional
 
-### Description
+Sou um desenvolvedor de software e pesquisador focado em encontrar soluções eficientes para problemas complexos. Atualmente, sou mestrando em Ciência da Computação, onde continuo minha pesquisa iniciada na graduação sobre **Pesquisa Operacional (PO) focada em otimização de portfólios de investimento**.
 
-Olá! Meu nome é João Gonçalo, sou estudante de Ciência da Computação na UFERSA Mossoró. Meu foco de estudo é em Java, principalmente para desenvolvimento de aplicações back-end utilizando o framework Spring Boot. Além disso, também tenho conhecimentos em C++ com foco em programação para jogos 2D, e conhecimentos básicos sobre programação para front-end. Atualmente estou aprendendo melhorando meus conhecimentos em Spring Boot.
+Minha carreira e estudos se focam em duas grandes áreas:
+-   **🚀 Back-End:** Construção de sistemas robustos, escaláveis e de alta performance com o ecossistema **Java e Spring**.
+-   **🧠 Pesquisa Operacional:** Modelagem e implementação de algoritmos de otimização, utilizando **Python** para transformar teoria em soluções práticas.
 
-<!-- 
-<img style="margin-left=50px;" class="margin-l" height=150px width=200px src="https://cdn.dribbble.com/users/330915/screenshots/3587000/10_coding_dribbble.gif">
--->
+Além do desenvolvimento, possuo experiência em **DevOps**, utilizando o básico de **Docker** para criar ambientes conteinerizados e gerenciando servidores para o deploy e a manutenção de aplicações.
 
+---
 
-<br/>
+### 💻 Minhas Tecnologias e Ferramentas
 
-[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jngoncalo)
-
-[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jnetogoncalo@gmail.com)](mailto:jnetogoncalo@gmail.com)
-
-- ### 📚 Graduating in Computer Science at UFERSA.
-
-### Skills
-<!-- ## Languages -->
-<div>
-  <table>
-    <th>
-      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />    
-    </th>
-    <th>
-      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
-    </th>
-    <th>
-      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original-wordmark.svg" />
-    </th>
-    <th>
-      <img height=30px width=30px  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-    </th>
-    <th>
-      <img height=30px width=30px  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-    </th>
-    <th>
-      <img height=30px width=30px  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-    </th>
-    <th>
-      <img height=30px width=30px  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-    </th>
-  </table>
-
-</div>
-
-<!-- ## Tools -->
-<div> 
-  <table>
-    <th>	  
-      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-    </th>
-    <th>	  
-      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original-wordmark.svg" />
-    </th>
-    <th>	  
-      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
-    </th>
-    <th>	  
-      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
-    </th>
-    <th>	  
-      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
-    </th>
-    <th>	  
-      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
-    </th>
-    <th>	  
-      <img height=30px width=30px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
-    </th>
+<table>
+  <tr>
+    <td valign="top" width="50%">
+      <strong>🚀 Back-End</strong>
+      <p>
+        <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+        <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring" />
+        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MongoDB&logoColor=white" alt="MongoDB" />
+      </p>
+      <br>
+      <strong>🧠 Pesquisa Operacional & Análise</strong>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
+      </p>
+      <br>
+      <strong>🎨 Front-End</strong>
+      <p>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+        <img src="https://img.shields.io/badge/Ant_Design-0170FE?style=for-the-badge&logo=antdesign&logoColor=white" alt="Ant Design" />
+      </p>
+      <em><small>Foco em componentização com Atomic Design.</small></em>
+    </td>
+    <td valign="top" width="50%">
+      <strong>☁️ DevOps & Infraestrutura</strong>
+      <p>
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+        <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+        <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
+      </p>
+      <br>
+      <strong>📱 Mobile</strong>
+      <p>
+        <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+        <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" alt="Swift" />
+      </p>
+    </td>
+  </tr>
 </table>
-</div>
+
+---
+
+### 📊 Minhas Estatísticas no GitHub
+
+![Estatísticas do GitHub de João Gonçalo](https://github-readme-stats.vercel.app/api?username=J0NGS&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true)
+
+![Top Linguagens](https://github-readme-stats.vercel.app/api/top-langs/?username=J0NGS&layout=compact&langs_count=7&theme=tokyonight)
+
+---
+
+### 📫 Conecte-se Comigo
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jngoncalo/)
+[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jnetogoncalo@gmail.com)
