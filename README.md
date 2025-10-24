@@ -23,13 +23,6 @@ Além do desenvolvimento, possuo experiência em **DevOps**, utilizando o básic
         <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring" />
         <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
         <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-        <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MongoDB&logoColor=white" alt="MongoDB" />
-      </p>
-      <br>
-      <strong>🧠 Pesquisa Operacional & Análise</strong>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-        <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
       </p>
       <br>
       <strong>🎨 Front-End</strong>
@@ -39,6 +32,12 @@ Além do desenvolvimento, possuo experiência em **DevOps**, utilizando o básic
         <img src="https://img.shields.io/badge/Ant_Design-0170FE?style=for-the-badge&logo=antdesign&logoColor=white" alt="Ant Design" />
       </p>
       <em><small>Foco em componentização com Atomic Design.</small></em>
+      <br><br>
+      <strong>📱 Mobile</strong>
+      <p>
+        <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+        <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" alt="Swift" />
+      </p>
     </td>
     <td valign="top" width="50%">
       <strong>☁️ DevOps & Infraestrutura</strong>
@@ -49,10 +48,10 @@ Além do desenvolvimento, possuo experiência em **DevOps**, utilizando o básic
         <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
       </p>
       <br>
-      <strong>📱 Mobile</strong>
+      <strong>🧠 Pesquisa Operacional & Análise</strong>
       <p>
-        <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
-        <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" alt="Swift" />
+        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
       </p>
     </td>
   </tr>
@@ -62,9 +61,10 @@ Além do desenvolvimento, possuo experiência em **DevOps**, utilizando o básic
 
 ### 📊 Minhas Estatísticas no GitHub
 
-![Estatísticas do GitHub de João Gonçalo](https://github-readme-stats.vercel.app/api?username=J0NGS&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true)
-
-![Top Linguagens](https://github-readme-stats.vercel.app/api/top-langs/?username=J0NGS&layout=compact&langs_count=7&theme=tokyonight)
+<p align="center">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=J0NGS&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub de João Gonçalo" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=J0NGS&layout=compact&langs_count=7&theme=tokyonight" alt="Top Linguagens" />
+</p>
 
 ---
 
