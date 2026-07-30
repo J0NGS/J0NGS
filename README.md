@@ -63,7 +63,7 @@ No back-end uso Java e Spring, organizado em camadas por feature e casos de uso,
 
 | Projeto | Descrição |
 |---|---|
-| **Mandacaru Hub** *(privado)* | Sistema operacional central de uma empresa de petrólio, do zero à produção multi-filial: inventário, manutenção, treinamentos e e-learning próprio e em constante expansão.
+| **Mandacaru Hub** *(privado)* | Sistema operacional central de uma empresa de petrólio, do zero: inventário, manutenção, treinamentos e e-learning próprio e em constante expansão.
 | **[DraeWiki](https://github.com/J0NGS/DraeWiki)** | API de Wiki/base de dados de um universo fictício de futebol. 
 | **[MLO](https://github.com/J0NGS/MLO)** | Motor de Branch-and-Bound / Branch-and-Cut implementado do zero em Python, aplicado a 10 problemas clássicos de Pesquisa Operacional. |
 | **[cplex_knapsack](https://github.com/J0NGS/cplex_knapsack)** | Resolução do Problema das Múltiplas Mochilas via IBM CPLEX, com benchmark e análise crítica dos resultados. |
