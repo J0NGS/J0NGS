@@ -306,208 +306,147 @@ def poster_footer():
 
 
 # ==========================================================================
-# ESTILO 2 — BRUTALISTA (linha fina, formas em excesso, "fantasias arquitetônicas")
+# ESTILO 2 — BRUTALISTA / CONSTRUTIVISTA, preto e branco, com cara de código
 # ==========================================================================
-B_CONC, B_CONC_D, B_CONC_L, B_BLACK, B_RED = "#A9A79F", "#6F6D68", "#D6D3C9", "#161616", "#D4281C"
-
-B_DEFS = (
-    '<filter id="conc" x="0" y="0" width="100%" height="100%">'
-    '<feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="3" seed="9" result="n"/>'
-    '<feColorMatrix type="matrix" values="0 0 0 0 0.05  0 0 0 0 0.05  0 0 0 0 0.04  0 0 0 0.30 0"/>'
-    "</filter>"
-    '<filter id="concl" x="0" y="0" width="100%" height="100%">'
-    '<feTurbulence type="fractalNoise" baseFrequency="0.4" numOctaves="2" seed="3" result="n"/>'
-    '<feColorMatrix type="matrix" values="0 0 0 0 0.05  0 0 0 0 0.05  0 0 0 0 0.04  0 0 0 0.20 0"/>'
-    "</filter>"
-    '<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
-    f'<line x1="0" y1="0" x2="0" y2="7" stroke="{B_BLACK}" stroke-width="0.9"/></pattern>'
-    '<pattern id="hatchr" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">'
-    f'<line x1="0" y1="0" x2="0" y2="6" stroke="{B_RED}" stroke-width="0.9"/></pattern>'
-)
+INK, PAPER = "#000000", "#FFFFFF"
 
 
-def b_concrete(w, h, fill=B_CONC_L, grid=80, hgrid=None, opacity=0.06):
-    """Concreto claro com textura e grelha de projeto muito fina."""
-    hg = hgrid or grid // 2
-    g = "".join(f'<path d="M{x} 0V{h}" stroke="{B_BLACK}" stroke-width="1" opacity="{opacity}"/>' for x in range(grid, w, grid))
-    g += "".join(f'<path d="M0 {y}H{w}" stroke="{B_BLACK}" stroke-width="1" opacity="{opacity}"/>' for y in range(hg, h, hg))
-    return f'<rect width="{w}" height="{h}" fill="{fill}"/><rect width="{w}" height="{h}" filter="url(#concl)"/>{g}'
-
-
-def wedge(x, y, size, corner, color=B_RED):
-    """Triângulo retângulo ancorado em um canto: a 'cunha vermelha' do construtivismo."""
-    dx = size if corner in ("tl", "bl") else -size
-    dy = size if corner in ("tl", "tr") else -size
-    return f'<polygon points="{x},{y} {x + dx},{y} {x},{y + dy}" fill="{color}"/>'
-
-
-def ruler(x0, x1, y, step=16, major=5, h=6, color=B_BLACK):
-    """Régua fina com marcações."""
-    out = [f'<path d="M{x0} {y}H{x1}" stroke="{color}" stroke-width="1.5"/>']
-    n = int((x1 - x0) // step)
-    for i in range(n + 1):
-        x = x0 + i * step
-        hh = h * 2 if i % major == 0 else h
-        out.append(f'<path d="M{x} {y}v-{hh}" stroke="{color}" stroke-width="1"/>')
-    return "".join(out)
-
-
-def tag(x, y, s, size=11, anchor="start", opacity=1.0):
+def mono(x, y, s, size=14, fill=INK, anchor="start", weight=400, ls=0.0):
     return (
-        f'<text x="{x:.1f}" y="{y:.1f}" font-family="{MONO}" font-size="{size}" fill="{B_BLACK}" '
-        f'text-anchor="{anchor}" letter-spacing="{0.08 * size:.2f}" opacity="{opacity}">{esc(s)}</text>'
+        f'<text x="{x:.1f}" y="{y:.1f}" font-family="{MONO}" font-size="{size}" font-weight="{weight}" '
+        f'fill="{fill}" text-anchor="{anchor}" letter-spacing="{ls * size:.2f}" xml:space="preserve">{esc(s)}</text>'
     )
 
 
 def brutal_banner():
-    """Linearismo: massa (logo) + construção polar de linhas finas ancorada no canto."""
-    W, H = 1280, 480
-    ink, G = B_BLACK, 80
-    b = [b_concrete(W, H, grid=G, hgrid=G, opacity=0.08)]
-    # coordenadas da grelha (16 colunas x 6 linhas), como numa planta
-    for i in range(16):
-        b.append(tag(G * i + 40, 15, f"{i + 1:02d}", 10, "middle", 0.55))
-    for j in range(6):
-        b.append(tag(14, G * j + 44, "ABCDEF"[j], 10, "middle", 0.55))
-    # ---------- construção polar: raios e arcos a partir do canto inferior direito ----------
-    ox, oy = W, H
-    clip = '<clipPath id="polar"><rect x="720" y="0" width="560" height="480"/></clipPath>'
-    g = ['<g clip-path="url(#polar)" fill="none">']
-    for r in range(160, 801, 160):
-        g.append(f'<circle cx="{ox}" cy="{oy}" r="{r}" stroke="{ink}" stroke-width="1"/>')
-    for k in range(7):
-        if 180 + 15 * k == 225:
-            continue
-        th = math.radians(180 + 15 * k)
-        g.append(f'<path d="M{ox} {oy}L{ox + 900 * math.cos(th):.1f} {oy + 900 * math.sin(th):.1f}" stroke="{ink}" stroke-width="1"/>')
-    th = math.radians(225)
-    g.append(f'<path d="M{ox} {oy}L{ox + 900 * math.cos(th):.1f} {oy + 900 * math.sin(th):.1f}" stroke="{B_RED}" stroke-width="3"/>')
-    g.append("</g>")
-    b.append("".join(g))
-    # rótulos de raio (na base) e de ângulo (no arco r=480)
-    for r in (160, 320, 480):
-        b.append(f'<rect x="{ox - r - 17}" y="{oy - 22}" width="34" height="14" fill="{B_CONC_L}"/>')
-        b.append(tag(ox - r, oy - 11, str(r), 10, "middle"))
-    for k in range(7):
-        a = 180 + 15 * k
-        x, y = ox + 480 * math.cos(math.radians(a)), oy + 480 * math.sin(math.radians(a))
-        if k in (0, 6):
-            continue
-        red = a == 225
-        if red:
-            x, y = x - 30, y + 20
-        b.append(f'<rect x="{x - 17:.1f}" y="{y - 8:.1f}" width="34" height="15" fill="{B_CONC_L}"/>')
-        b.append(
-            f'<text x="{x:.1f}" y="{y + 3:.1f}" font-family="{MONO}" font-size="10" text-anchor="middle" '
-            f'fill="{B_RED if red else ink}" font-weight="{700 if red else 400}">{k * 15}°</text>'
-        )
-    b.append(f'<circle cx="{ox + 480 * math.cos(math.radians(225)):.1f}" cy="{oy + 480 * math.sin(math.radians(225)):.1f}" r="5" fill="{B_RED}"/>')
-    # lema ao longo do raio vermelho
-    px, py = ox + 560 * math.cos(math.radians(225)), oy + 560 * math.sin(math.radians(225))
-    b.append(
-        f'<g transform="translate({px:.1f} {py:.1f}) rotate(45) translate(0 -8)">'
-        f'<text font-family="{MONO}" font-size="12" fill="{ink}" letter-spacing="1.4">OTIMIZAR · CONSTRUIR · ENTREGAR</text></g>'
+    """Editor de código em cartaz: calha com números de linha, logo, e uma cunha diagonal com código."""
+    W, H, LINE = 1280, 480, 32
+    b = [f'<rect width="{W}" height="{H}" fill="{PAPER}"/>']
+    # calha do editor
+    for i in range(15):
+        b.append(mono(40, 22 + i * LINE, f"{i + 1:02d}", 10, anchor="end"))
+    b.append(f'<path d="M56 0V{H}" stroke="{INK}" stroke-width="1"/>')
+    # linhas paralelas à hipotenusa da cunha (construção, só no lado de fora)
+    x0, y0, x1, y1 = 700, 480, 1280, 40
+    ln = math.hypot(x1 - x0, y1 - y0)
+    dx, dy = (x1 - x0) / ln, (y1 - y0) / ln
+    nx, ny = dy, -dx  # normal apontando para fora (cima-esquerda)
+    clip = (
+        f'<clipPath id="fora"><path clip-rule="evenodd" d="M0 0H{W}V{H}H0Z M{x0} {y0}L{x1} {y0}L{x1} {y1}Z"/></clipPath>'
+        f'<clipPath id="dentro"><polygon points="{x0},{y0} {x1},{y0} {x1},{y1}"/></clipPath>'
+        f'<clipPath id="resto"><rect x="680" y="0" width="{W - 680}" height="{H}"/></clipPath>'
     )
-    b.append(wedge(W, H, 56, "br"))
-    # ---------- massa: o logo, alinhado à grelha ----------
-    b.append(tag(G, 50, "PROJETO Nº 001  ·  MANDACARU ENERGIA", 12))
-    b.append(logo(G, G, 600, ink))
-    b.append(ruler(G, G + 600, 340, step=16, major=5, h=5))
-    nm, _ = block_text(G, 366, 30, "JOÃO GONÇALO", 4.0, ink, square=True, gap=0.1)
+    par = []
+    for k in (1, 2, 3, 4):
+        o = k * 26
+        par.append(
+            f'<path d="M{x0 + nx * o - dx * 400:.1f} {y0 + ny * o - dy * 400:.1f}L{x1 + nx * o + dx * 400:.1f} {y1 + ny * o + dy * 400:.1f}" '
+            f'stroke="{INK}" stroke-width="1"/>'
+        )
+    b.append(f'<g clip-path="url(#resto)">{"".join(par)}</g>')
+    # a cunha
+    b.append(f'<polygon points="{x0},{y0} {x1},{y0} {x1},{y1}" fill="{INK}"/>')
+    # círculo atravessando a hipotenuse: preto fora da cunha, branco dentro
+    cx, cy, r = x0 + dx * 650, y0 + dy * 650, 70
+    b.append(f'<g clip-path="url(#fora)"><circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r}" fill="none" stroke="{INK}" stroke-width="2"/></g>')
+    b.append(f'<g clip-path="url(#dentro)"><circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r}" fill="none" stroke="{PAPER}" stroke-width="2"/>'
+             f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r - 24}" fill="{PAPER}"/></g>')
+    # código ao longo da hipotenusa
+    ang = math.degrees(math.atan2(y1 - y0, x1 - x0))
+    px, py = x0 + dx * 236, y0 + dy * 236
+    code = ["const dev = {", '  nome: "João Gonçalo",', '  lidera: "Mandacaru Hub",', '  pesquisa: "otimização",', '  stack: ["Java", "React"],', "};"]
+    t = [f'<g transform="translate({px:.1f} {py:.1f}) rotate({ang:.2f})">']
+    for i, c in enumerate(code):
+        t.append(mono(0, 34 + i * 26, c, 17, PAPER, weight=700))
+    t.append("</g>")
+    b.append("".join(t))
+    # coluna da esquerda
+    b.append(mono(96, 22 + LINE, "$ whoami", 14, weight=700))
+    b.append(logo(96, 80, 560, INK))
+    nm, _ = block_text(96, 334, 30, "JOÃO GONÇALO", 4.0, INK, square=True, gap=0.1)
     b.append(nm)
-    for i, t in enumerate(["DESENVOLVEDOR FULL-STACK", "MESTRANDO EM CIÊNCIA DA COMPUTAÇÃO", "PESQUISADOR EM PESQUISA OPERACIONAL"]):
-        b.append(f'<path d="M{G} {420 + i * 20 - 4}h8" stroke="{B_RED if i == 0 else ink}" stroke-width="2"/>')
-        b.append(tag(G + 18, 420 + i * 20, t, 12))
-    b.append(wedge(0, 0, 30, "tl"))
-    return svg(W, H, "\n".join(b), "João Gonçalo — Desenvolvedor Full-Stack, Mestrando em Ciência da Computação, Pesquisador em Pesquisa Operacional", B_DEFS + clip)
+    for i, t_ in enumerate(["// desenvolvedor full-stack", "// mestrando em ciência da computação", "// pesquisador em pesquisa operacional"]):
+        b.append(mono(96, 22 + (12 + i) * LINE, t_, 15))
+    cur_x = 96 + len("// pesquisador em pesquisa operacional") * 9 + 8
+    b.append(f'<rect x="{cur_x}" y="{22 + 14 * LINE - 14}" width="9" height="17" fill="{INK}"/>')
+    return svg(W, H, "\n".join(b), "João Gonçalo — Desenvolvedor Full-Stack, Mestrando em Ciência da Computação, Pesquisador em Pesquisa Operacional", clip)
 
 
 def brutal_header(num, title, sub=""):
-    """Cabeçalho como linha de tabela: número | título | índice de seções."""
+    """Barra preta com corte diagonal, estilo '## título' de markdown."""
     W, H = 1280, 96
-    ink = B_BLACK
-    n = int(num)
-    b = [b_concrete(W, H, grid=160, hgrid=96)]
-    b.append(f'<path d="M0 1H{W}" stroke="{ink}" stroke-width="1.5"/>')
-    b.append(f'<path d="M0 {H - 1}H{W}" stroke="{ink}" stroke-width="3"/>')
-    b.append(f'<path d="M104 1V{H - 1}M{W - 336} 1V{H - 1}" stroke="{ink}" stroke-width="1"/>')
-    b.append(wedge(0, 1, 34, "tl"))
-    b.append(label(52, 66, num, 40, ink, mono=True, anchor="middle", spacing=0, weight=400))
-    b.append(label(132, 62, title.upper(), 38, ink, spacing=0.2, weight=400))
+    tw = text_width(title.upper(), 32, mono=True, spacing=0.06)
+    end = 124 + tw + 56
+    b = [f'<rect width="{W}" height="{H}" fill="{PAPER}"/>']
+    b.append(f'<polygon points="0,18 {end:.0f},18 {end - 30:.0f},78 0,78" fill="{INK}"/>')
+    b.append(mono(24, 60, num, 32, PAPER, weight=700))
+    b.append(f'<path d="M86 30V66" stroke="{PAPER}" stroke-width="2"/>')
+    b.append(mono(108, 60, title.upper(), 32, PAPER, weight=700, ls=0.06))
+    b.append(f'<path d="M{end + 24:.0f} 48H{W - 150}" stroke="{INK}" stroke-width="1"/>')
+    b.append(mono(W - 8, 54, f"// {num}/06", 15, anchor="end"))
     if sub:
-        b.append(tag(132, 26, sub.upper(), 11))
-    # índice de seções: 6 segmentos, o atual em vermelho
-    b.append(tag(W - 312, 34, f"SEÇÃO {n:02d}/06", 11))
-    for i in range(6):
-        x = W - 312 + i * 48
-        fill = B_RED if i == n - 1 else "none"
-        b.append(f'<rect x="{x}" y="52" width="40" height="12" fill="{fill}" stroke="{B_RED if i == n - 1 else ink}" stroke-width="1"/>')
-    return svg(W, H, "\n".join(b), title, B_DEFS)
+        b.append(mono(end + 24, 38, "# " + sub.lower(), 12))
+    return svg(W, H, "\n".join(b), title)
 
 
 def brutal_tech(groups):
-    """Tabela: categoria | células contíguas, com linhas finas."""
-    W = 1280
-    LABEL_W, ROW_H = 250, 54
-    ink = B_BLACK
+    """Tabela: rótulo preto | células brancas contíguas."""
+    W, LABEL_W, ROW_H = 1280, 250, 56
     b, y = [], 0
-    tops = [0]
-    for gi, (cat, items) in enumerate(groups):
+    for cat, items in groups:
         rows, cur, cw = [], [], LABEL_W
         for it in items:
-            tw = text_width(it, 19, mono=True, spacing=0.02) + 48
-            if cur and cw + tw > W - 8:
+            tw = text_width(it, 19, mono=True) + 48
+            if cur and cw + tw > W - 4:
                 rows.append(cur)
                 cur, cw = [], LABEL_W
             cur.append((it, tw))
             cw += tw
         rows.append(cur)
         h = len(rows) * ROW_H
-        b.append(wedge(0, y, 16, "tl"))
-        b.append(label(28, y + h / 2 + 6, cat.upper(), fit_size(cat.upper(), LABEL_W - 28 - 44, start=17, spacing=0.12), ink, spacing=0.12, weight=400))
-        b.append(tag(LABEL_W - 16, y + 18, f"0{gi + 1}", 10, "end"))
-        b.append(f'<path d="M{LABEL_W} {y}V{y + h}" stroke="{ink}" stroke-width="1"/>')
+        b.append(f'<rect x="0" y="{y}" width="{LABEL_W}" height="{h}" fill="{INK}"/>')
+        b.append(mono(24, y + h / 2 + 5, cat.upper(), 15, PAPER, weight=700, ls=0.08))
         for ri, row in enumerate(rows):
-            ry = y + ri * ROW_H
-            x = LABEL_W
+            ry, x = y + ri * ROW_H, LABEL_W
             for it, tw in row:
                 x += tw
-                b.append(f'<path d="M{x:.0f} {ry}V{ry + ROW_H}" stroke="{ink}" stroke-width="1"/>')
-                b.append(label(x - tw / 2, ry + ROW_H / 2 + 6, it, 19, ink, mono=True, anchor="middle", spacing=0.02, weight=400))
+                b.append(f'<path d="M{x:.0f} {ry}V{ry + ROW_H}" stroke="{INK}" stroke-width="1"/>')
+                b.append(mono(x - tw / 2, ry + ROW_H / 2 + 6, it, 19, INK, anchor="middle"))
             if ri:
-                b.append(f'<path d="M{LABEL_W} {ry}H{W}" stroke="{ink}" stroke-width="0.6"/>')
+                b.append(f'<path d="M{LABEL_W} {ry}H{W}" stroke="{INK}" stroke-width="1"/>')
+        b.append(f'<path d="M0 {y + h}H{W}" stroke="{INK}" stroke-width="2"/>')
         y += h
-        tops.append(y)
     H = y + 1
-    lines = "".join(f'<path d="M0 {t + 0.5}H{W}" stroke="{ink}" stroke-width="{3 if t == tops[-1] else 1.5}"/>' for t in tops)
-    body = b_concrete(W, H, grid=160, hgrid=ROW_H) + lines + "\n".join(b)
-    return svg(W, H, body, "Tecnologias e ferramentas", B_DEFS)
+    body = f'<rect width="{W}" height="{H}" fill="{PAPER}"/><path d="M0 1H{W}" stroke="{INK}" stroke-width="2"/>' + "\n".join(b)
+    return svg(W, H, body, "Tecnologias e ferramentas")
 
 
 def brutal_contact(kind, big, small):
+    """Botão cru: preto (linkedin) ou contornado (e-mail), com canto chanfrado."""
     W, H = 620, 130
-    ink = B_BLACK
-    b = [b_concrete(W, H, grid=160, hgrid=130)]
-    b.append(f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" fill="none" stroke="{ink}" stroke-width="1.5"/>')
-    b.append(f'<path d="M{W - 150} 1V{H - 1}" stroke="{ink}" stroke-width="1"/>')
-    b.append(wedge(1, 1, 30, "tl"))
-    b.append(tag(40, 50, small.upper(), 12))
-    b.append(label(40, 98, big.upper(), 40 if len(big) < 11 else 30, ink, spacing=0.12, weight=400))
+    solid = kind == "linkedin"
+    fg, bg = (PAPER, INK) if solid else (INK, PAPER)
+    c = 34
+    pts = f"0,0 {W - c},0 {W},{c} {W},{H} 0,{H}"
+    b = [f'<rect width="{W}" height="{H}" fill="{PAPER}"/>']
+    b.append(f'<polygon points="{pts}" fill="{bg}" stroke="{INK}" stroke-width="3"/>')
+    b.append(f'<path d="M{W - 150} {H - 3}V{36}" stroke="{fg}" stroke-width="1"/>')
+    b.append(mono(34, 50, small, 14, fg))
+    b.append(mono(34, 98, big.upper(), 40 if len(big) < 11 else 30, fg, weight=700, ls=0.04))
     ax = W - 112
-    b.append(f'<path d="M{ax} {H / 2}H{ax + 70}M{ax + 54} {H / 2 - 16}L{ax + 70} {H / 2}L{ax + 54} {H / 2 + 16}" fill="none" stroke="{ink}" stroke-width="1.5"/>')
-    return svg(W, H, "\n".join(b), f"{big} — {small}", B_DEFS)
+    b.append(f'<path d="M{ax} {H / 2 + 8}H{ax + 70}M{ax + 54} {H / 2 - 8}L{ax + 70} {H / 2 + 8}L{ax + 54} {H / 2 + 24}" fill="none" stroke="{fg}" stroke-width="3"/>')
+    return svg(W, H, "\n".join(b), f"{big} — {small}")
 
 
 def brutal_footer():
     W, H = 1280, 120
-    ink = B_BLACK
-    b = [b_concrete(W, H, grid=160, hgrid=120)]
-    b.append(f'<path d="M0 1H{W}" stroke="{ink}" stroke-width="1.5"/>')
-    b.append(tag(80, 48, "OTIMIZAR  ·  CONSTRUIR  ·  ENTREGAR", 12))
-    b.append(tag(W - 120, 48, "FIM  06/06", 12, "end"))
-    b.append(ruler(80, W - 120, 92, step=16, major=5, h=5))
-    b.append(wedge(W, H, 64, "br"))
-    return svg(W, H, "\n".join(b), "Rodapé", B_DEFS)
+    b = [f'<rect width="{W}" height="{H}" fill="{PAPER}"/>']
+    b.append(mono(96, 40, "// fim do arquivo", 15))
+    b.append(f'<polygon points="0,{H} 0,70 {W},24 {W},{H}" fill="{INK}"/>')
+    b.append(mono(96, 106, "$ exit 0", 22, PAPER, weight=700))
+    b.append(f'<rect x="{96 + 8 * 13.2 + 8:.0f}" y="88" width="12" height="22" fill="{PAPER}"/>')
+    b.append(mono(W - 24, 106, "06/06", 15, PAPER, anchor="end"))
+    return svg(W, H, "\n".join(b), "Rodapé")
 
 
 # ==========================================================================
