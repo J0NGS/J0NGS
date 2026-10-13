@@ -9,11 +9,10 @@
 <img src="./h-sobre.svg" width="100%" alt="01 — Sobre mim" />
 
 ```text
-FUNÇÃO ....... Líder do time de desenvolvimento, Mandacaru Energia
-OBRA ......... Mandacaru Hub
-ESCOPO ....... banco de dados · backend · frontend · infra · liderança
-PESQUISA ..... otimização de carteira de investimento (mestrado)
-MÉTODO ....... algoritmos implementados do zero
+ATUALMENTE ... desenvolvimento de software na Mandacaru Energia
+MESTRADO ..... Ciência da Computação
+PESQUISA ..... otimização de carteira de investimento
+CÓDIGO ABERTO  contribuição no CUSTOMHyS
 ```
 
 Trabalho com desenvolvimento de software na **Mandacaru Energia** e, no mestrado, com pesquisa operacional. Estou à frente da equipe de desenvolvimento, tocando projetos como o Mandacaru Hub e atuando em banco de dados, backend, frontend, infra e liderança de equipe. No mestrado dou continuidade a uma pesquisa que comecei ainda na graduação, em otimização de carteira de investimento.

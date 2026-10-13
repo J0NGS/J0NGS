@@ -319,57 +319,43 @@ def mono(x, y, s, size=14, fill=INK, anchor="start", weight=400, ls=0.0):
 
 
 def brutal_banner():
-    """Editor de código em cartaz: calha com números de linha, logo, e uma cunha diagonal com código."""
-    W, H, LINE = 1280, 480, 32
+    """Um único arquivo de código: a cunha preta inverte a cor das linhas que ela cruza."""
+    W, H, LINE = 1280, 416, 32
     b = [f'<rect width="{W}" height="{H}" fill="{PAPER}"/>']
     # calha do editor
-    for i in range(15):
+    for i in range(13):
         b.append(mono(40, 22 + i * LINE, f"{i + 1:02d}", 10, anchor="end"))
     b.append(f'<path d="M56 0V{H}" stroke="{INK}" stroke-width="1"/>')
-    # linhas paralelas à hipotenusa da cunha (construção, só no lado de fora)
-    x0, y0, x1, y1 = 700, 480, 1280, 40
-    ln = math.hypot(x1 - x0, y1 - y0)
-    dx, dy = (x1 - x0) / ln, (y1 - y0) / ln
-    nx, ny = dy, -dx  # normal apontando para fora (cima-esquerda)
+    # cunha preta
+    wx0, wy1 = 700, 40
+    wedge_pts = f"{wx0},{H} {W},{H} {W},{wy1}"
+    b.append(f'<polygon points="{wedge_pts}" fill="{INK}"/>')
     clip = (
-        f'<clipPath id="fora"><path clip-rule="evenodd" d="M0 0H{W}V{H}H0Z M{x0} {y0}L{x1} {y0}L{x1} {y1}Z"/></clipPath>'
-        f'<clipPath id="dentro"><polygon points="{x0},{y0} {x1},{y0} {x1},{y1}"/></clipPath>'
-        f'<clipPath id="resto"><rect x="680" y="0" width="{W - 680}" height="{H}"/></clipPath>'
+        f'<clipPath id="fora"><path clip-rule="evenodd" d="M0 0H{W}V{H}H0Z M{wx0} {H}L{W} {H}L{W} {wy1}Z"/></clipPath>'
+        f'<clipPath id="dentro"><polygon points="{wedge_pts}"/></clipPath>'
     )
-    par = []
-    for k in (1, 2, 3, 4):
-        o = k * 26
-        par.append(
-            f'<path d="M{x0 + nx * o - dx * 400:.1f} {y0 + ny * o - dy * 400:.1f}L{x1 + nx * o + dx * 400:.1f} {y1 + ny * o + dy * 400:.1f}" '
-            f'stroke="{INK}" stroke-width="1"/>'
-        )
-    b.append(f'<g clip-path="url(#resto)">{"".join(par)}</g>')
-    # a cunha
-    b.append(f'<polygon points="{x0},{y0} {x1},{y0} {x1},{y1}" fill="{INK}"/>')
-    # círculo atravessando a hipotenuse: preto fora da cunha, branco dentro
-    cx, cy, r = x0 + dx * 650, y0 + dy * 650, 70
-    b.append(f'<g clip-path="url(#fora)"><circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r}" fill="none" stroke="{INK}" stroke-width="2"/></g>')
-    b.append(f'<g clip-path="url(#dentro)"><circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r}" fill="none" stroke="{PAPER}" stroke-width="2"/>'
-             f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r - 24}" fill="{PAPER}"/></g>')
-    # código ao longo da hipotenusa
-    ang = math.degrees(math.atan2(y1 - y0, x1 - x0))
-    px, py = x0 + dx * 236, y0 + dy * 236
-    code = ["const dev = {", '  nome: "João Gonçalo",', '  lidera: "Mandacaru Hub",', '  pesquisa: "otimização",', '  stack: ["Java", "React"],', "};"]
-    t = [f'<g transform="translate({px:.1f} {py:.1f}) rotate({ang:.2f})">']
-    for i, c in enumerate(code):
-        t.append(mono(0, 34 + i * 26, c, 17, PAPER, weight=700))
-    t.append("</g>")
-    b.append("".join(t))
-    # coluna da esquerda
+    # as linhas de código cruzam a cunha: preto sobre branco fora, branco sobre preto dentro
+    code = [
+        "const joao = {",
+        '  cargo: "Desenvolvedor Full-Stack",',
+        '  atualmente: "Mandacaru Energia",',
+        '  mestrando: "Ciência da Computação",',
+        '  pesquisa: "otimização de carteira",',
+        "};",
+    ]
+    rows = [22 + (6 + i) * LINE for i in range(len(code))]
+    def lines(color):
+        return "".join(mono(690, y, c, 16, color, weight=700) for y, c in zip(rows, code))
+    b.append(f'<g clip-path="url(#fora)">{lines(INK)}</g>')
+    b.append(f'<g clip-path="url(#dentro)">{lines(PAPER)}</g>')
+    # coluna da esquerda: prompt, logo, nome, cursor
     b.append(mono(96, 22 + LINE, "$ whoami", 14, weight=700))
     b.append(logo(96, 80, 560, INK))
-    nm, _ = block_text(96, 334, 30, "JOÃO GONÇALO", 4.0, INK, square=True, gap=0.1)
+    nm, _ = block_text(96, 332, 30, "JOÃO GONÇALO", 4.0, INK, square=True, gap=0.1)
     b.append(nm)
-    for i, t_ in enumerate(["// desenvolvedor full-stack", "// mestrando em ciência da computação", "// pesquisador em pesquisa operacional"]):
-        b.append(mono(96, 22 + (12 + i) * LINE, t_, 15))
-    cur_x = 96 + len("// pesquisador em pesquisa operacional") * 9 + 8
-    b.append(f'<rect x="{cur_x}" y="{22 + 14 * LINE - 14}" width="9" height="17" fill="{INK}"/>')
-    return svg(W, H, "\n".join(b), "João Gonçalo — Desenvolvedor Full-Stack, Mestrando em Ciência da Computação, Pesquisador em Pesquisa Operacional", clip)
+    b.append(mono(96, 22 + 12 * LINE, "$", 14, weight=700))
+    b.append(f'<rect x="114" y="{22 + 12 * LINE - 13}" width="9" height="16" fill="{INK}"/>')
+    return svg(W, H, "\n".join(b), "João Gonçalo — Desenvolvedor Full-Stack na Mandacaru Energia, mestrando em Ciência da Computação", clip)
 
 
 def brutal_header(num, title, sub=""):
