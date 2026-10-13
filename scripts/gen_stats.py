@@ -100,7 +100,7 @@ def card(t, d):
     if not langs:
         b.append(mono(LABEL_W + 24, y0 + 30, "—", 20, ink))
     b.append(f'<path d="M0 {y0 + h}H{W}" stroke="{ink}" stroke-width="2"/>')
-    return svg(W, y0 + h + 2, "\n".join(b), "Estatísticas do GitHub")
+    return svg(W, y0 + h + 2, "\n".join(b), "Estatísticas do GitHub", bg=paper)
 
 
 def main():

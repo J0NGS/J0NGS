@@ -68,7 +68,7 @@ def banner(t):
         b.append(mono(96, 22 + (12 + i) * LINE, s, 16, ink))
     cur_x = 96 + mono_width(roles[-1], 16) + 8
     b.append(f'<rect x="{cur_x:.1f}" y="{22 + 14 * LINE - 14}" width="10" height="18" fill="{ink}"/>')
-    return svg(W, H, "\n".join(b), "João Gonçalo — Desenvolvedor Full-Stack na Mandacaru Energia, mestrando em Ciência da Computação", clip)
+    return svg(W, H, "\n".join(b), "João Gonçalo — Desenvolvedor Full-Stack na Mandacaru Energia, mestrando em Ciência da Computação", clip, bg=paper)
 
 
 def header(t, num, title, sub):
@@ -83,7 +83,7 @@ def header(t, num, title, sub):
     b.append(f'<path d="M{end + 24:.0f} 52H{W - 170}" stroke="{ink}" stroke-width="1"/>')
     b.append(mono(end + 24, 40, "# " + sub.lower(), 16, ink))
     b.append(mono(W - 8, 58, f"// {num}/06", 18, ink, "end"))
-    return svg(W, H, "\n".join(b), title)
+    return svg(W, H, "\n".join(b), title, bg=paper)
 
 
 def tech(t, groups):
@@ -117,7 +117,7 @@ def tech(t, groups):
                 b.append(f'<path d="M{LABEL_W} {ry}H{W}" stroke="{ink}" stroke-width="1"/>')
         b.append(f'<path d="M0 {y + h}H{W}" stroke="{ink}" stroke-width="2"/>')
         y += h
-    return svg(W, y + 2, "\n".join(b), "Tecnologias e ferramentas")
+    return svg(W, y + 2, "\n".join(b), "Tecnologias e ferramentas", bg=t.paper)
 
 
 def contact(t, kind, big, small):
@@ -133,7 +133,7 @@ def contact(t, kind, big, small):
     b.append(mono(34, 100, big.upper(), 40 if len(big) < 11 else 30, fg, bold=True, ls=0.04))
     ax = W - 112
     b.append(f'<path d="M{ax} {H / 2 + 8}H{ax + 70}M{ax + 54} {H / 2 - 8}L{ax + 70} {H / 2 + 8}L{ax + 54} {H / 2 + 24}" fill="none" stroke="{fg}" stroke-width="3"/>')
-    return svg(W, H, "\n".join(b), f"{big} — {small}")
+    return svg(W, H, "\n".join(b), f"{big} — {small}", bg=t.paper)
 
 
 def footer(t):
@@ -144,7 +144,7 @@ def footer(t):
     b.append(mono(96, 106, "$ exit 0", 22, paper, bold=True))
     b.append(f'<rect x="{96 + mono_width("$ exit 0", 22) + 8:.1f}" y="88" width="12" height="22" fill="{paper}"/>')
     b.append(mono(W - 24, 106, "06/06", 18, paper, "end"))
-    return svg(W, H, "\n".join(b), "Rodapé")
+    return svg(W, H, "\n".join(b), "Rodapé", bg=t.paper)
 
 
 TECH = [

@@ -147,8 +147,10 @@ def block_text(x, y, height, s, stroke, color, gap=0.1):
     return "".join(out)
 
 
-def svg(w, h, body, title, defs=""):
+def svg(w, h, body, title, defs="", bg=None):
     esc = title.replace("&", "&amp;").replace("<", "&lt;")
+    if bg:  # fundo opaco: o SVG continua legível mesmo se o tema da página não bater com a variante
+        body = f'<rect width="{w}" height="{h}" fill="{bg}"/>\n' + body
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{esc}">\n'
         f"<title>{esc}</title>\n<defs>{defs}</defs>\n{body}\n</svg>\n"
