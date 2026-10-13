@@ -1,87 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 372" width="1280" height="372" role="img" aria-label="Tecnologias e ferramentas">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 344" width="1280" height="344" role="img" aria-label="Tecnologias e ferramentas">
 <title>Tecnologias e ferramentas</title>
 <defs><filter id="conc" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="3" seed="9" result="n"/><feColorMatrix type="matrix" values="0 0 0 0 0.05  0 0 0 0 0.05  0 0 0 0 0.04  0 0 0 0.30 0"/></filter><filter id="concl" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.4" numOctaves="2" seed="3" result="n"/><feColorMatrix type="matrix" values="0 0 0 0 0.05  0 0 0 0 0.05  0 0 0 0 0.04  0 0 0 0.20 0"/></filter><pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#161616" stroke-width="0.9"/></pattern><pattern id="hatchr" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#D4281C" stroke-width="0.9"/></pattern></defs>
-<rect width="1280" height="372" fill="#D6D3C9"/><rect width="1280" height="372" filter="url(#concl)"/><path d="M160 0V372" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M320 0V372" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M480 0V372" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M640 0V372" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M800 0V372" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M960 0V372" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M1120 0V372" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M0 80H1280" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M0 160H1280" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M0 240H1280" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M0 320H1280" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M0 0H230M0 52H230" stroke="#161616" stroke-width="1.5"/>
-<rect x="0" y="0" width="6" height="52" fill="#D4281C"/>
-<text x="24.0" y="33.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="2.00">BACK-END</text>
-<text x="226.0" y="14.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#161616" text-anchor="end" letter-spacing="0.44">01</text>
-<rect x="274" y="0" width="114" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<circle cx="298" cy="26.0" r="6" fill="none" stroke="#D4281C" stroke-width="1.6"/>
-<text x="318.0" y="32.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Java</text>
-<rect x="399.6125" y="0" width="138" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<rect x="399.6125" y="0" width="138" height="52" fill="url(#hatch)" opacity="0.22"/>
-<polygon points="416.6125,32.0 423.6125,19.0 430.6125,32.0" fill="none" stroke="#161616" stroke-width="1.6"/>
-<text x="443.6" y="32.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Spring</text>
-<rect x="550.03125" y="0" width="188" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<rect x="568.03125" y="20.0" width="12" height="12" fill="none" stroke="#161616" stroke-width="1.6"/>
-<text x="594.0" y="32.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">PostgreSQL</text>
-<rect x="750.0625" y="0" width="126" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<path d="M767.0625 26.0H781.0625M774.0625 19.0V33.0" stroke="#161616" stroke-width="1.6"/>
-<text x="794.1" y="32.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">MySQL</text>
-<path d="M0 80H230M0 132H230" stroke="#161616" stroke-width="1.5"/>
-<rect x="0" y="80" width="6" height="52" fill="#D4281C"/>
-<text x="24.0" y="113.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="2.00">FRONT-END</text>
-<text x="226.0" y="94.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#161616" text-anchor="end" letter-spacing="0.44">02</text>
-<rect x="274" y="80" width="126" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<circle cx="298" cy="106.0" r="6" fill="none" stroke="#D4281C" stroke-width="1.6"/>
-<text x="318.0" y="112.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">React</text>
-<rect x="412.015625" y="80" width="188" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<rect x="412.015625" y="80" width="188" height="52" fill="url(#hatch)" opacity="0.22"/>
-<polygon points="429.015625,112.0 436.015625,99.0 443.015625,112.0" fill="none" stroke="#161616" stroke-width="1.6"/>
-<text x="456.0" y="112.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">TypeScript</text>
-<rect x="612.046875" y="80" width="114" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<rect x="630.046875" y="100.0" width="12" height="12" fill="none" stroke="#161616" stroke-width="1.6"/>
-<text x="656.0" y="112.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Vite</text>
-<rect x="737.659375" y="80" width="151" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<path d="M754.659375 106.0H768.659375M761.659375 99.0V113.0" stroke="#161616" stroke-width="1.6"/>
-<text x="781.7" y="112.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Mantine</text>
-<path d="M0 160H230M0 212H230" stroke="#161616" stroke-width="1.5"/>
-<rect x="0" y="160" width="6" height="52" fill="#D4281C"/>
-<text x="24.0" y="193.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="2.00">MOBILE</text>
-<text x="226.0" y="174.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#161616" text-anchor="end" letter-spacing="0.44">03</text>
-<rect x="274" y="160" width="151" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<circle cx="298" cy="186.0" r="6" fill="none" stroke="#D4281C" stroke-width="1.6"/>
-<text x="318.0" y="192.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Flutter</text>
-<rect x="436.821875" y="160" width="126" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<rect x="436.821875" y="160" width="126" height="52" fill="url(#hatch)" opacity="0.22"/>
-<polygon points="453.821875,192.0 460.821875,179.0 467.821875,192.0" fill="none" stroke="#161616" stroke-width="1.6"/>
-<text x="480.8" y="192.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Swift</text>
-<path d="M0 240H230M0 292H230" stroke="#161616" stroke-width="1.5"/>
-<rect x="0" y="240" width="6" height="52" fill="#D4281C"/>
-<text x="24.0" y="273.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="19" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="1.90">DEVOPS &amp; INFRA</text>
-<text x="226.0" y="254.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#161616" text-anchor="end" letter-spacing="0.44">04</text>
-<rect x="274" y="240" width="138" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<circle cx="298" cy="266.0" r="6" fill="none" stroke="#D4281C" stroke-width="1.6"/>
-<text x="318.0" y="272.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Docker</text>
-<rect x="424.41875" y="240" width="238" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<rect x="424.41875" y="240" width="238" height="52" fill="url(#hatch)" opacity="0.22"/>
-<polygon points="441.41875,272.0 448.41875,259.0 455.41875,272.0" fill="none" stroke="#161616" stroke-width="1.6"/>
-<text x="468.4" y="272.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">GitHub Actions</text>
-<rect x="674.0625" y="240" width="126" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<rect x="692.0625" y="260.0" width="12" height="12" fill="none" stroke="#161616" stroke-width="1.6"/>
-<text x="718.1" y="272.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Linux</text>
-<rect x="812.078125" y="240" width="101" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<path d="M829.078125 266.0H843.078125M836.078125 259.0V273.0" stroke="#161616" stroke-width="1.6"/>
-<text x="856.1" y="272.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Git</text>
-<rect x="925.2875" y="240" width="126" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<rect x="925.2875" y="240" width="126" height="52" fill="url(#hatch)" opacity="0.22"/>
-<circle cx="949.2875" cy="266.0" r="6" fill="none" stroke="#161616" stroke-width="1.6"/>
-<text x="969.3" y="272.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Nginx</text>
-<rect x="1063.303125" y="240" width="151" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<polygon points="1080.303125,272.0 1087.303125,259.0 1094.303125,272.0" fill="none" stroke="#161616" stroke-width="1.6"/>
-<text x="1107.3" y="272.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Grafana</text>
-<path d="M0 320H230M0 372H230" stroke="#161616" stroke-width="1.5"/>
-<rect x="0" y="320" width="6" height="52" fill="#D4281C"/>
-<text x="24.0" y="353.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="1.30">PESQUISA OPERACIONAL</text>
-<text x="226.0" y="334.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#161616" text-anchor="end" letter-spacing="0.44">05</text>
-<rect x="274" y="320" width="138" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<circle cx="298" cy="346.0" r="6" fill="none" stroke="#D4281C" stroke-width="1.6"/>
-<text x="318.0" y="352.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Python</text>
-<rect x="424.41875" y="320" width="151" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<rect x="424.41875" y="320" width="151" height="52" fill="url(#hatch)" opacity="0.22"/>
-<polygon points="441.41875,352.0 448.41875,339.0 455.41875,352.0" fill="none" stroke="#161616" stroke-width="1.6"/>
-<text x="468.4" y="352.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">Jupyter</text>
-<rect x="587.2406249999999" y="320" width="101" height="52" fill="#A9A79F" fill-opacity="0.35" stroke="#161616" stroke-width="1.5"/>
-<rect x="605.2406249999999" y="340.0" width="12" height="12" fill="none" stroke="#161616" stroke-width="1.6"/>
-<text x="631.2" y="352.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="20" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="0.40">C++</text>
+<rect width="1280" height="344" fill="#D6D3C9"/><rect width="1280" height="344" filter="url(#concl)"/><path d="M160 0V344" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M320 0V344" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M480 0V344" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M640 0V344" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M800 0V344" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M960 0V344" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M1120 0V344" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M0 80H1280" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M0 160H1280" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M0 240H1280" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M0 320H1280" stroke="#161616" stroke-width="1" opacity="0.06"/><path d="M0 0H230M0 48H230" stroke="#161616" stroke-width="1"/>
+<rect x="0" y="0" width="5" height="48" fill="#D4281C"/>
+<text x="24.0" y="30.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="18" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="2.16">BACK-END</text>
+<text x="226.0" y="15.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#161616" text-anchor="end" letter-spacing="0.44">01</text>
+<rect x="274" y="0" width="87" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="317.6" y="30.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Java</text>
+<rect x="373.13187500000004" y="0" width="111" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="428.5" y="30.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Spring</text>
+<rect x="495.82968750000003" y="0" width="158" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="574.7" y="30.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">PostgreSQL</text>
+<rect x="665.659375" y="0" width="99" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="715.1" y="30.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">MySQL</text>
+<path d="M0 74H230M0 122H230" stroke="#161616" stroke-width="1"/>
+<rect x="0" y="74" width="5" height="48" fill="#D4281C"/>
+<text x="24.0" y="104.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="18" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="2.16">FRONT-END</text>
+<text x="226.0" y="89.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#161616" text-anchor="end" letter-spacing="0.44">02</text>
+<rect x="274" y="74" width="99" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="323.5" y="104.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">React</text>
+<rect x="384.91484375" y="74" width="158" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="463.8" y="104.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">TypeScript</text>
+<rect x="554.7445312499999" y="74" width="87" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="598.3" y="104.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Vite</text>
+<rect x="653.87640625" y="74" width="122" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="715.1" y="104.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Mantine</text>
+<path d="M0 148H230M0 196H230" stroke="#161616" stroke-width="1"/>
+<rect x="0" y="148" width="5" height="48" fill="#D4281C"/>
+<text x="24.0" y="178.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="18" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="2.16">MOBILE</text>
+<text x="226.0" y="163.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#161616" text-anchor="end" letter-spacing="0.44">03</text>
+<rect x="274" y="148" width="122" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="335.2" y="178.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Flutter</text>
+<rect x="408.48078125" y="148" width="99" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="457.9" y="178.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Swift</text>
+<path d="M0 222H230M0 270H230" stroke="#161616" stroke-width="1"/>
+<rect x="0" y="222" width="5" height="48" fill="#D4281C"/>
+<text x="24.0" y="252.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="18" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="2.16">DEVOPS &amp; INFRA</text>
+<text x="226.0" y="237.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#161616" text-anchor="end" letter-spacing="0.44">04</text>
+<rect x="274" y="222" width="111" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="329.3" y="252.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Docker</text>
+<rect x="396.6978125" y="222" width="205" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="499.2" y="252.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">GitHub Actions</text>
+<rect x="613.659375" y="222" width="99" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="663.1" y="252.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Linux</text>
+<rect x="724.57421875" y="222" width="75" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="762.2" y="252.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Git</text>
+<rect x="811.923125" y="222" width="99" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="861.4" y="252.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Nginx</text>
+<rect x="922.8379687500001" y="222" width="122" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="984.1" y="252.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Grafana</text>
+<path d="M0 296H230M0 344H230" stroke="#161616" stroke-width="1"/>
+<rect x="0" y="296" width="5" height="48" fill="#D4281C"/>
+<text x="24.0" y="326.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="12" font-weight="400" fill="#161616" text-anchor="start" letter-spacing="1.44">PESQUISA OPERACIONAL</text>
+<text x="226.0" y="311.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="11" font-weight="400" fill="#161616" text-anchor="end" letter-spacing="0.44">05</text>
+<rect x="274" y="296" width="111" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="329.3" y="326.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Python</text>
+<rect x="396.6978125" y="296" width="122" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="457.9" y="326.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">Jupyter</text>
+<rect x="531.17859375" y="296" width="75" height="48" fill="none" stroke="#161616" stroke-width="1"/>
+<text x="568.9" y="326.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="19" font-weight="400" fill="#161616" text-anchor="middle" letter-spacing="0.38">C++</text>
 </svg>
