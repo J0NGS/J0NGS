@@ -354,7 +354,7 @@ def brutal_banner():
     # código ao longo da hipotenusa
     ang = math.degrees(math.atan2(y1 - y0, x1 - x0))
     px, py = x0 + dx * 236, y0 + dy * 236
-    code = ["const joao = {", '  cargo: "Desenvolvedor Full-Stack",', '  atualmente: "Mandacaru Energia",', '  mestrando: "Ciência da Computação",', "};"]
+    code = ["const jongs = {", '  cargo: "Desenvolvedor Full-Stack",', '  atualmente: "Mandacaru Energia",', '  mestrando: "Ciência da Computação",', "};"]
     t = [f'<g transform="translate({px:.1f} {py:.1f}) rotate({ang:.2f})">']
     for i, c in enumerate(code):
         t.append(mono(0, 34 + i * 26, c, 17, PAPER, weight=700))
