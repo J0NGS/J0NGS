@@ -12,20 +12,20 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
-      - uses: Platane/snk@v3
+      - uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
         id: snake
         with:
           github_user_name: J0NGS
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=#000000&color_dots=#ececec,#c4c4c4,#8c8c8c,#545454,#000000
+            dist/github-snake-dark.svg?color_snake=#ffffff&color_dots=#161b22,#4a4a4a,#7a7a7a,#b0b0b0,#ffffff
 
       - name: Sync with remote before committing
         run: git pull --rebase origin main
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@b863ae1933cb653a53c021fe36dbb774e1fb9403 # v5.2.0
         with:
           commit_message: "Update contribution snake"
           file_pattern: dist/
