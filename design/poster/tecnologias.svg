@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 410" width="1280" height="410" role="img" aria-label="Tecnologias e ferramentas">
+<title>Tecnologias e ferramentas</title>
+<defs><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/><feColorMatrix type="matrix" values="0 0 0 0 0.1  0 0 0 0 0.08  0 0 0 0 0.05  0 0 0 0.16 0"/></filter></defs>
+<rect width="1280" height="410" fill="#E9DFC8"/><rect width="1280" height="410" filter="url(#grain)"/><polygon points="0,0 250,0 222,58 0,58" fill="#141414"/>
+<rect x="0" y="0" width="14" height="58" fill="#D8261D"/>
+<text x="34.0" y="37.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="start" letter-spacing="1.10">BACK-END</text>
+<polygon points="288,0 375.57625,0 359.57625,58 272,58" fill="#D8261D"/>
+<text x="323.8" y="37.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">Java</text>
+<polygon points="403.57625,0 513.1971875,0 497.19718750000004,58 387.57625,58" fill="#141414"/>
+<text x="450.4" y="37.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">Spring</text>
+<polygon points="541.1971875,0 710.92625,0 694.92625,58 525.1971875,58" fill="#D9CDB0" stroke="#141414" stroke-width="3"/>
+<text x="618.1" y="37.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#141414" text-anchor="middle" letter-spacing="0.66">PostgreSQL</text>
+<polygon points="738.92625,0 854.009375,0 838.009375,58 722.92625,58" fill="#D8261D"/>
+<text x="788.5" y="37.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">MySQL</text>
+<polygon points="0,88 250,88 222,146 0,146" fill="#141414"/>
+<rect x="0" y="88" width="14" height="58" fill="#D8261D"/>
+<text x="34.0" y="125.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="start" letter-spacing="1.10">FRONT-END</text>
+<polygon points="288,88 387.215625,88 371.215625,146 272,146" fill="#D8261D"/>
+<text x="329.6" y="125.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">React</text>
+<polygon points="415.215625,88 569.8712499999999,88 553.8712499999999,146 399.215625,146" fill="#141414"/>
+<text x="484.5" y="125.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">TypeScript</text>
+<polygon points="597.8712499999999,88 676.4584375,88 660.4584375,146 581.8712499999999,146" fill="#D9CDB0" stroke="#141414" stroke-width="3"/>
+<text x="629.2" y="125.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#141414" text-anchor="middle" letter-spacing="0.66">Vite</text>
+<polygon points="704.4584375,88 828.1834375,88 812.1834375,146 688.4584375,146" fill="#D8261D"/>
+<text x="758.3" y="125.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">Mantine</text>
+<polygon points="0,176 250,176 222,234 0,234" fill="#141414"/>
+<rect x="0" y="176" width="14" height="58" fill="#D8261D"/>
+<text x="34.0" y="213.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="start" letter-spacing="1.10">MOBILE</text>
+<polygon points="288,176 397.05375000000004,176 381.05375000000004,234 272,234" fill="#D8261D"/>
+<text x="334.5" y="213.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">Flutter</text>
+<polygon points="425.05375000000004,176 516.9028125,176 500.9028125,234 409.05375000000004,234" fill="#141414"/>
+<text x="463.0" y="213.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">Swift</text>
+<polygon points="0,264 250,264 222,322 0,322" fill="#141414"/>
+<rect x="0" y="264" width="14" height="58" fill="#D8261D"/>
+<text x="34.0" y="301.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="18" font-weight="900" fill="#E9DFC8" text-anchor="start" letter-spacing="0.90">DEVOPS &amp; INFRA</text>
+<polygon points="288,264 402.5503125,264 386.5503125,322 272,322" fill="#D8261D"/>
+<text x="337.3" y="301.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">Docker</text>
+<polygon points="430.5503125,264 635.066875,264 619.066875,322 414.5503125,322" fill="#141414"/>
+<text x="524.8" y="301.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">GitHub Actions</text>
+<polygon points="663.066875,264 761.024375,264 745.024375,322 647.066875,322" fill="#D9CDB0" stroke="#141414" stroke-width="3"/>
+<text x="704.0" y="301.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#141414" text-anchor="middle" letter-spacing="0.66">Linux</text>
+<polygon points="789.024375,264 857.5534375,264 841.5534375,322 773.024375,322" fill="#D8261D"/>
+<text x="815.3" y="301.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">Git</text>
+<polygon points="885.5534375,264 985.961875,264 969.961875,322 869.5534375,322" fill="#141414"/>
+<text x="927.8" y="301.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">Nginx</text>
+<polygon points="1013.961875,264 1137.72125,264 1121.72125,322 997.961875,322" fill="#D9CDB0" stroke="#141414" stroke-width="3"/>
+<text x="1067.8" y="301.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#141414" text-anchor="middle" letter-spacing="0.66">Grafana</text>
+<polygon points="0,352 250,352 222,410 0,410" fill="#141414"/>
+<rect x="0" y="352" width="14" height="58" fill="#D8261D"/>
+<text x="34.0" y="389.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="12" font-weight="900" fill="#E9DFC8" text-anchor="start" letter-spacing="0.60">PESQUISA OPERACIONAL</text>
+<polygon points="288,352 402.505625,352 386.505625,410 272,410" fill="#D8261D"/>
+<text x="337.3" y="389.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">Python</text>
+<polygon points="430.505625,352 550.5903125,352 534.5903125,410 414.505625,410" fill="#141414"/>
+<text x="482.5" y="389.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="0.66">Jupyter</text>
+<polygon points="578.5903125,352 658.1571875,352 642.1571875,410 562.5903125,410" fill="#D9CDB0" stroke="#141414" stroke-width="3"/>
+<text x="610.4" y="389.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="22" font-weight="900" fill="#141414" text-anchor="middle" letter-spacing="0.66">C++</text>
+</svg>

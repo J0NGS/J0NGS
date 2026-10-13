@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 120" width="1280" height="120" role="img" aria-label="Rodapé">
+<title>Rodapé</title>
+<defs></defs>
+<rect width="1280" height="120" fill="#FFFFFF"/>
+<text x="96.0" y="40.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="15" font-weight="400" fill="#000000" text-anchor="start" letter-spacing="0.00" xml:space="preserve">// fim do arquivo</text>
+<polygon points="0,120 0,70 1280,24 1280,120" fill="#000000"/>
+<text x="96.0" y="106.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="start" letter-spacing="0.00" xml:space="preserve">$ exit 0</text>
+<rect x="210" y="88" width="12" height="22" fill="#FFFFFF"/>
+<text x="1256.0" y="106.0" font-family="'Courier New', Courier, 'Liberation Mono', monospace" font-size="15" font-weight="400" fill="#FFFFFF" text-anchor="end" letter-spacing="0.00" xml:space="preserve">06/06</text>
+</svg>
