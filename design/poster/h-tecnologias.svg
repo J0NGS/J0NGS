@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 96" width="1280" height="96" role="img" aria-label="Tecnologias">
+<title>Tecnologias</title>
+<defs><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/><feColorMatrix type="matrix" values="0 0 0 0 0.1  0 0 0 0 0.08  0 0 0 0 0.05  0 0 0 0.16 0"/></filter></defs>
+<rect width="1280" height="96" fill="#E9DFC8"/><rect width="1280" height="96" filter="url(#grain)"/>
+<rect x="0" y="0" width="96" height="96" fill="#D8261D"/>
+<text x="48.0" y="64.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="46" font-weight="900" fill="#E9DFC8" text-anchor="middle" letter-spacing="1.84">02</text>
+<polygon points="96,0 587,0 553,96 96,96" fill="#141414"/>
+<text x="130.0" y="64.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="44" font-weight="900" fill="#E9DFC8" text-anchor="start" letter-spacing="2.20">TECNOLOGIAS</text>
+<rect x="601" y="78" width="619" height="6" fill="#141414"/>
+<polygon points="1228,88 1272,88 1272,44" fill="#D8261D"/>
+<text x="604.9" y="40.0" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="15" font-weight="700" fill="#141414" text-anchor="start" letter-spacing="2.40">FERRAMENTAS DE TRABALHO</text>
+</svg>
